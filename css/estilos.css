@@ -16,7 +16,7 @@
 }
 
 .logo-text {
-    width: 246px;
+    width: 136px;
 }
 .navigation{
     padding-left: 0px;
@@ -50,7 +50,7 @@
 .navigation li ul {
     display: none;
     position: absolute;
-    max-width: 155px;
+    max-width: 160px;
 }
 .navigation li:hover > ul {
     display:block;

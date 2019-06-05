@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Shop</title>
     <style>
         body {
             width: 100%;
@@ -14,10 +14,15 @@
             background-size: cover;
         }
 
+        .navigation {
+            display: inline-block;
+            vertical-align: top;
+        }
+
         .navigation li {
             list-style: none;
             display: inline-block;
-            padding: 5px 10px;
+            padding: 0px 5px 5px 10px;
 
             box-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
             border-radius: 12px;
@@ -45,27 +50,60 @@
             position: absolute;
             max-width: 140px;
         }
-        .content{
+
+        /* Style multimenu*/
+        .navigation li ul {
+            display: none;
+            position: absolute;
+            max-width: 160px;
+        }
+
+        .navigation li:hover>ul {
+            display: block;
+            color: black !important;
+            padding: 0;
+            text-align: left;
+            margin-left: -10px;
+        }
+
+        .navigation li ul li a {
+            color: black !important;
+            display: block;
+        }
+
+        .navigation li ul li {
+            position: relative;
+            display: block;
+            text-align: center;
+        }
+
+        .navigation li ul li ul {
+            right: -140px;
+            top: 0px;
+        }
+
+        /* End Style multimenu */
+        .content {
             width: 80%;
             height: 80%;
             margin: 0 auto;
         }
-        .navigation{
-            display: inline-block;
-            vertical-align: top;
-        }
-        .logo{
+
+        .logo {
             width: 174px;
         }
 
-        .logo-images{
+        .logo-images {
             width: 150px;
             float: right;
         }
-        .logo-text , .logo{
+
+        .logo-text,
+        .logo {
             width: 100%;
         }
-        .products{
+
+        .products {
             background: white;
             width: 100%;
             height: 100%;
@@ -77,16 +115,15 @@
 <body>
     <div class="content">
         <ul class="navigation">
-            <li><a href="#"> Home </a></li>
+            <li><a href="index.html"> Home </a></li>
             <li>
-                <a href="#">Enlace 2</a>
+                <a href="#">About me </a>
                 <ul>
-                    <li><a href="#">Enlace 2.1</a></li>
-                    <li><a href="#">Enlace 2.2</a></li>
-                    <li><a href="#">Enlace 2.3</a></li>
+                    <li><a href="#">Hire me</a></li>
+                    <li><a href="#">Academic information</a></li>
                 </ul>
             </li>
-            <li><a href="#"> About me</a></li>
+
             <li><a href="#"> Portfolio</a></li>
             <li><a href="shop.html"> Shop </a></li>
             <li><a href="#"> Contact </a></li>
@@ -95,6 +132,7 @@
             <img src="images/logo.png" alt="logo" class="logo">
             <img src="images/text-image.png" alt="text image" class="logo-text">
         </div>
+        <!--<div style="clear: both;"></div> -->
         <div class="products">
             <img src="images/products/producto1.jpg" alt="Producto 1">
             <img src="images/products/producto2.jpg" alt="Producto 2">
