@@ -1,3 +1,3 @@
 # cv_priscila
-clonando el repositorio de priscila
+clonando el sitio de priscila
 
